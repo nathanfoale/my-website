@@ -11,6 +11,26 @@
     <link rel="stylesheet" href="https://assets.dorik.io/shared/aos.css">
 
     <style>
+        @media screen and (max-width: 600px) {
+            .button-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .button-container .dorik-btn {
+                margin-bottom: 20px;
+            }
+        }
+        
+        @media screen and (min-width: 601px) {
+            .button-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+
         @media screen and (max-width: 750px) and (min-width: 700px) {
             .container {
                 width: 680px;
@@ -74,7 +94,7 @@
         }
 
         #roadmap h2 {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
 
         #roadmap ol {
@@ -109,7 +129,6 @@
     </style>
 </head>
 
-
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     <section class="dorik-section dorik-section-s2rdbmg1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
         <div class="">
@@ -124,7 +143,7 @@
 
                                     <button aria-label="Navbar Toggle" class="dorik-navbar--toggle" data-target="#dorikNavbarCollapse">
                                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-fw" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                            <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path>
+                                            <path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32z"></path>
                                         </svg>
                                     </button>
                                     <div class="dorik-navbar--collapse collapse" id="dorikNavbarCollapse">
@@ -168,7 +187,7 @@
                                 </style>
                             </div>
                             <div class="dorik-text dorik-text-xn44adjw">
-                                <p>To develop and innovate transformative business solutions, starting with our flagship bus operations management app and continually expanding our offerings to meet evolving industry needs</p>
+                                <p>To develop and innovate transformative business solutions, starting with our flagship bus operations management app and continually expanding our offerings to meet evolving industry needs.</p>
                             </div>
                         </div>
                     </div>
@@ -227,7 +246,7 @@
                                         <div class="job-role-title">DevOps Engineer</div>
                                         <div class="job-role-description">Ensures smooth deployment and scalability of the project.</div>
                                     </div>
-                                    <div class="dorik-button-n4w0gelw-wrapper el-ib" style="margin-top: 30px;">
+                                    <div class="button-container" style="display: flex; flex-direction: column; align-items: center; margin-top: 30px;">
                                         <p class="dorik-btn dorik-button-n4w0gelw" href="javascript:void(0);" onclick="toggleSection('roadmap');">See Project Roadmap</p>
                                         <p class="dorik-btn dorik-button-n4w0gelw" href="javascript:void(0);" onclick="toggleSection('saas-features-section');">App Components & Features</p>
                                     </div>
@@ -239,60 +258,57 @@
             </div>
         </section>
 
-      
-       <!-- SaaS Features Section -->
-<section id="saas-features-section">
-    <div class="container">
-        <h2>Bus Operations App Components & Features</h2>
-        <ul>
-            <li style="font-size: 1.2em; margin-top: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;"><strong>User Interface (UI):</strong></li>
-            <ul>
-                <li><strong>Employee Dashboard:</strong> For bus cleaners and refillers to log bus numbers, report incidents, and view their tasks.</li>
-                <li><strong>Admin Dashboard:</strong> For supervisors or admins to view overall statistics, generate reports, and manage operations.</li>
-            </ul>
-            
-            
-            <li style="font-size: 1.2em; margin-top: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;"><strong>Live Bus Tracking:</strong></li>
-            <ul>
-                <li><strong>Real-Time Bus Tracking API:</strong> Enables workers to track the live location of buses, allowing them to plan their tasks more effectively and reduce downtime by minimizing waiting periods.</li>
-            </ul>
-                
-            </ul>
-            <li style="font-size: 1.2em; margin-top: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;"><strong>Data Logging and Entry:</strong></li>
-            <ul>
-                <li><strong>Bus Log Form:</strong> Employees enter bus numbers and details of each cleaning or refueling operation.</li>
-                <li><strong>Incident Reporting Form:</strong> To report any issues or incidents encountered during operations.</li>
-            </ul>
-            <li style="font-size: 1.2em; margin-top: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;"><strong>Database:</strong></li>
-            <ul>
-                <li><strong>Bus Operations Database:</strong> To store records of cleaned/refueled buses, incidents, and other operational data.</li>
-                <li><strong>Employee Management:</strong> To track employee details, wages, and work logs.</li>
-            </ul>
-            <li style="font-size: 1.2em; margin-top: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;"><strong>Automation and Reporting:</strong></li>
-            <ul>
-                <li><strong>Invoicing Automation:</strong> Calculate amounts to invoice based on the number of buses cleaned/refueled and employee work logs.</li>
-                <li><strong>Operational Reports:</strong> Generate reports on the number of buses cleaned/refueled, incident logs, and other metrics.</li>
-            </ul>
-            <li style="font-size: 1.2em; margin-top: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;"><strong>Integration:</strong></li>
-            <ul>
-                <li><strong>Finance Department Integration:</strong> To automatically transfer data for invoicing and payroll.</li>
-                <li><strong>Data Export:</strong> Ability to export data for further analysis or integration with other systems.</li>
-            </ul>
-            
-            <li style="font-size: 1.2em; margin-top: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;"><strong>Technologies and Tools:</strong></li>
-            <ul>
-                <li><strong>Frontend:</strong> Technology: React.js for a dynamic and responsive UI. UI Framework: Tailwind CSS or Bootstrap for modern design.</li>
-                <li><strong>Backend:</strong> Technology: Django (Python) for a robust backend with built-in admin features. API Framework: Django REST Framework for handling API requests. Authentication: JWT for secure user authentication.</li>
-                <li><strong>Database:</strong> Technology: PostgreSQL for reliable data storage. ORM: Django’s built-in ORM for easy database management through Python.</li>
-                <li><strong>Deployment:</strong> Hosting: GitHub Pages for a static frontend, or services like Heroku or AWS for dynamic backend deployment.</li>
-                <li><strong>Automation Tools:</strong> Task Automation: Use cron jobs or scheduled tasks to automate data processing and report generation.</li>
-            </ul>
-        </ul>
-        
-    </div>
-</section>
-
-    
+        <!-- SaaS Features Section -->
+        <section id="saas-features-section">
+            <div class="container">
+                <h2>Bus Operations App Components & Features</h2>
+                <ul>
+                    <li style="font-size: 1.2em; margin-top: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;"><strong>User Interface (UI):</strong></li>
+                    <ul>
+                        <li><strong>Employee Dashboard:</strong> For bus cleaners and refillers to log bus numbers, report incidents, and view their tasks.</li>
+                        <li><strong>Admin Dashboard:</strong> For supervisors or admins to view overall statistics, generate reports, and manage operations.</li>
+                    </ul>
+                    
+                    <li style="font-size: 1.2em; margin-top: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;"><strong>Live Bus Tracking:</strong></li>
+                    <ul>
+                        <li><strong>Real-Time Bus Tracking API:</strong> Enables workers to track the live location of buses, allowing them to plan their tasks more effectively and reduce downtime by minimizing waiting periods.</li>
+                    </ul>
+                    
+                    <li style="font-size: 1.2em; margin-top: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;"><strong>Data Logging and Entry:</strong></li>
+                    <ul>
+                        <li><strong>Bus Log Form:</strong> Employees enter bus numbers and details of each cleaning or refueling operation.</li>
+                        <li><strong>Incident Reporting Form:</strong> To report any issues or incidents encountered during operations.</li>
+                    </ul>
+                    
+                    <li style="font-size: 1.2em; margin-top: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;"><strong>Database:</strong></li>
+                    <ul>
+                        <li><strong>Bus Operations Database:</strong> To store records of cleaned/refueled buses, incidents, and other operational data.</li>
+                        <li><strong>Employee Management:</strong> To track employee details, wages, and work logs.</li>
+                    </ul>
+                    
+                    <li style="font-size: 1.2em; margin-top: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;"><strong>Automation and Reporting:</strong></li>
+                    <ul>
+                        <li><strong>Invoicing Automation:</strong> Calculate amounts to invoice based on the number of buses cleaned/refueled and employee work logs.</li>
+                        <li><strong>Operational Reports:</strong> Generate reports on the number of buses cleaned/refueled, incident logs, and other metrics.</li>
+                    </ul>
+                    
+                    <li style="font-size: 1.2em; margin-top: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;"><strong>Integration:</strong></li>
+                    <ul>
+                        <li><strong>Finance Department Integration:</strong> To automatically transfer data for invoicing and payroll.</li>
+                        <li><strong>Data Export:</strong> Ability to export data for further analysis or integration with other systems.</li>
+                    </ul>
+                    
+                    <li style="font-size: 1.2em; margin-top: 15px; border-bottom: 2px solid #4CAF50; padding-bottom: 5px;"><strong>Technologies and Tools:</strong></li>
+                    <ul>
+                        <li><strong>Frontend:</strong> Technology: React.js for a dynamic and responsive UI. UI Framework: Tailwind CSS or Bootstrap for modern design.</li>
+                        <li><strong>Backend:</strong> Technology: Django (Python) for a robust backend with built-in admin features. API Framework: Django REST Framework for handling API requests. Authentication: JWT for secure user authentication.</li>
+                        <li><strong>Database:</strong> Technology: PostgreSQL for reliable data storage. ORM: Django’s built-in ORM for easy database management through Python.</li>
+                        <li><strong>Deployment:</strong> Hosting: GitHub Pages for a static frontend, or services like Heroku or AWS for dynamic backend deployment.</li>
+                        <li><strong>Automation Tools:</strong> Task Automation: Use cron jobs or scheduled tasks to automate data processing and report generation.</li>
+                    </ul>
+                </ul>
+            </div>
+        </section>
 
         <!-- Roadmap Section -->
         <section id="roadmap">
